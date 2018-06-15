@@ -1,0 +1,285 @@
+html {
+
+}
+
+body {
+
+}
+
+h1, h2, h3 {
+	font-family: sans-serif;
+	color: white;
+}
+
+h1 {
+	font-size: 2.25em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p, a, li {
+	font-size: 17px;
+	font-family: sans-serif;
+	color: white;
+}
+
+#form {
+	border-radius: 14px;
+	height: 800px;
+	width: 600px;
+	margin-left: -300px;
+	margin-top: -400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+
+#background {
+	background-image: url("background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);*/
+	height: 100%;
+	width: 100%;
+	border-radius: 14px;
+	z-index: 0;
+}
+
+#content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 800px;
+	width: 600px;
+	margin-top: -400px;
+	margin-left: -300px;
+	padding: 32px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+.header {
+	width: 100%;
+	padding: 0;
+	margin-bottom: -20px;
+}
+
+input {
+	height: 44px;
+	border-radius: 5px;
+	outline: none;
+	font-size: 17px;
+	background: white;
+	color: black;
+	border: none;
+	padding: 0px 8px 0px 8px;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    -o-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    transition: .8s cubic-bezier(.2, 1, .2, 1)
+}
+
+input:focus {
+	color: black;
+	/*border: 2px solid #8f97b1;*/
+	-webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .5)
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+input[type=submit] {
+	position: relative;
+	width: 128px;
+}
+
+.submit {
+	width: 128px;
+	margin-top: -88px;
+	margin-left: 236px;
+	-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+    -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    -o-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    transition: .8s cubic-bezier(.2, 1, .2, 1)
+}
+
+.submit:hover {
+	-webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .5)
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.inputContainer {
+	margin: 8px 4px 8px 4px;
+	align-self: auto;
+	height: 100px;
+	width: 286px;
+}
+
+#flex-grow {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+#uploadButtonContainer {
+	overflow: hidden;
+	height: 44px;
+	width: 128px;
+	position: relative;
+	-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
+    -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    -o-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    transition: .8s cubic-bezier(.2, 1, .2, 1)
+}
+
+#uploadButtonContainer:hover {
+	-webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .5)
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.button {
+	background-color: white;
+	padding: 8px;
+	border-radius: 5px;
+	border: none;
+	height: 44px;
+	width: 128px;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+#uploadButtonContainer input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+
+	body {
+		overflow: hidden;
+	}
+
+	#form {
+		height: 700px;
+		width: 600px;
+		margin-left: -300px;
+		margin-top: -350px;
+	}
+
+	#content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 700px;
+		width: 600px;
+		margin-top: -350px;
+		margin-left: -300px;
+		padding: 16px;
+	}
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+	.submit {
+		margin-left: 420px;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+	#form {
+		height: 800px;
+		width: 600px;
+		margin-left: -300px;
+		margin-top: -270px;
+	}
+
+	#content {
+		height: 800px;
+		width: 600px;
+		margin-top: -370px;
+		margin-left: -300px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	body {
+		height: 1420px;
+	}
+
+	#form {
+		height: 1300px;
+		width: 374px;
+		margin-left: -187px;
+		margin-top: -325px;
+		overflow: hidden;
+	}
+
+	#content {
+		height: 1300px;
+		width: 400px;
+		margin-top: -650px;
+		margin-left: -200px;
+	}
+
+	.submit {
+		margin-left: 220px;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+	body {
+		height: 1420px;
+	}
+
+	#form {
+		height: 1300px;
+		width: 400px;
+		margin-left: -200px;
+		margin-top: -350px;
+		overflow: hidden;
+	}
+
+	#content {
+		height: 1300px;
+		width: 400px;
+		margin-top: -650px;
+		margin-left: -200px;
+	}
+
+	.submit {
+		margin-left: 220px;
+	}
+
+}
