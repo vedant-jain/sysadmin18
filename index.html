@@ -13,35 +13,63 @@
 			</div>
 			<div class = "inputContainer" id = "flex-grow">
 				<p>Team Name</p>
-				<input name = "teamName" formmethod="POST" type="text" placeholder="teamNameSucks">
+				<input name = "teamName" formmethod="POST" type="text" placeholder="teamNameSucks" required>
 			</div>
 			<div class = "inputContainer" id = "flex-grow">
 				<p>Name (Team Head)</p>
-				<input name = "teamHead" formmethod="POST" type="text" placeholder="teamHeadGivesHead">
+				<input name = "teamHead" formmethod="POST" type="text" placeholder="teamHeadGivesHead" required>
 			</div>
 			<div class = "inputContainer">
 				<p>Registration Number</p>
-				<input name = "regNo" formmethod="POST" type="text" placeholder="170906969">
+				<input name = "regNo" formmethod="POST" type="number" min="100000000" max="999999999" oninput="validity.valid||(value='');" maxlength="10" placeholder="170906969" required>
 			</div>
 			<div class = "inputContainer">
 				<p>Branch/Specialization</p>
-				<input name = "branch" formmethod="POST" type="text" placeholder="Pfft">
+				<input name = "branch" list="branch" formmethod="POST" type="text" placeholder="-Your branch here-" required>
+				<datalist id="branch">
+					<option value="Aeronautical">
+					<option value="Automobile">
+					<option value="Biomediacal">
+					<option value="Biotechnology">
+					<option value="Chemical">
+					<option value="Civil">
+					<option value="Computer & Communication">
+					<option value="Computer Science">
+					<option value="Electrical & Electronics">
+					<option value="Electronics & Communication">
+					<option value="Industrial & Production">
+					<option value="Information Technology">
+					<option value="Instrumentation & Control">
+					<option value="Mechatronics">
+					<option value="Printing & Media">
+					<option value="Mechanical">
+					<option value="Others">
+				</datalist>
 			</div>
 			<div class = "inputContainer">
 				<p>Semester</p>
-				<input name = "sem" formmethod="POST" type="text" placeholder="9">
+				<input name = "sem" formmethod="POST" type="number" min="1" oninput="validity.valid||(value='');" max="8" placeholder="1-8" required>
 			</div>
 			<div class = "inputContainer" id = "flex-grow">
 				<p>Institution</p>
-				<input name = "institution" formmethod="POST" type="text" placeholder="Mighty mighty MIT">
+				<input name = "institution" formmethod="POST" type="text" placeholder="Mighty mighty MIT" list="institution" required>
+				<datalist id="institution">
+					<option value="MIT, Manipal">
+					<option value="FOA, Manipal">
+					<option value="SOAHS">
+					<option value="SOC">
+					<option value="MCODS, Manipal">
+					<option value="MCOPS, Manipal">
+					<option value="KMC, Manipal">
+				</datalist>
 			</div>
 			<div class = "inputContainer">
 				<p>Phone Number</p>
-				<input name = "number" formmethod="POST" type="text" placeholder="+91 6969696969">
+				<input name = "number" formmethod="POST" type="number" placeholder="+916969696969" required>
 			</div>
 			<div class = "inputContainer" id = "flex-grow">
 				<p>Email ID</p>
-				<input name = "email" formmethod="POST" type="text" placeholder="fakeemail@host.com">
+				<input name = "email" formmethod="POST" type="email" placeholder="fakeemail@host.com" required>
 			</div>
 			<div class = "inputContainer">
 				<p>Upload a file:</p>
@@ -53,7 +81,7 @@
 		</div>
 
 		<div class = "submit">
-			<input name = "submitButton" formmethod="POST" type="submit" placeholder="Submit">
+			<input name = "submitButton" formmethod="POST" type="submit" value="Submit">
 		</div>
 	</div>
 </body>
