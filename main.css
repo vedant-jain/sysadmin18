@@ -79,7 +79,7 @@ p, a, li {
 	margin-bottom: -20px;
 }
 
-input {
+input, select {
 	height: 44px;
 	border-radius: 5px;
 	outline: none;
@@ -92,10 +92,20 @@ input {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
     -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
     -o-transition: .8s cubic-bezier(.2, 1, .2, 1);
-    transition: .8s cubic-bezier(.2, 1, .2, 1)
+    transition: .8s cubic-bezier(.2, 1, .2, 1);
 }
 
-input:focus {
+select {
+	width: 225px;
+	background: white;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    -o-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    transition: .8s cubic-bezier(.2, 1, .2, 1);
+}
+
+input:focus, select:focus {
 	color: black;
 	/*border: 2px solid #8f97b1;*/
 	-webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
